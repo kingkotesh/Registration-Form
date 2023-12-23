@@ -1,0 +1,75 @@
+registration form
+------------------
+<!DOCTYPE html>
+<html>
+<head>
+<title>registration form</title>
+<script>
+function fun()
+{
+var n=document.getElementById("n").value;
+var r=document.getElementById("r").value;
+var e=document.getElementById("e").value;
+var g=document.getElementById("g").value;
+var dob=document.getElementById("dob").value;
+var y=document.getElementById("y").value;
+var b=document.getElementById("b").value;
+var h=document.getElementById("h").value;
+
+/*alert("Name:"+n);
+alert("Registration number:"+r);
+alert("Email id:"+e);
+alert("Gender:"+g);
+alert("Date of Birth:"+dob);
+alert("Year of study:"+y);
+alert("Department:"+b);
+alert("Hobbies:"+h);
+alert("Thank you for filling the form...");*/
+alert("Name:"+n+"\nRegistration number:"+r+"\nEmail id:"+e+"\nGender:"+fun1+"\nDate of Birth:"+dob+"\nYear of study:"+y+"\nDepartment:"+b+"\nHobbies:"+h);
+alert("Thank you for filling the form...");
+}
+
+</script>
+</head>
+<body>
+<h1 align="center"><ins>Registration Form</ins></h1>
+<div align="center">
+<form>
+<h3>Name:<input id="n" type='text'/></h3>
+<h3>Reg Number:<input id="r" type='text'/></h3>
+<h3>Email id:<input id="e" type='email'/></h3>
+<h3>
+select your gender:
+<input id="g" name="g" type='radio' value="Male" onclick="fun1=this.value"/>Male
+<input id="g" name="g" type='radio' value="Female" onclick="fun1=this.value"/>Female
+<input id="g" name="g" type='radio' value="Others" onclick="fun1=this.value"/>Others
+</h3>
+<h3>DOB:<input id="dob" type="date"/></h3>
+<h3>
+select year of study:
+<select id="y">
+<option>--select--</option>
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+</select>
+</h3>
+<h3>
+select branch:
+<select id="b">
+<option>--select--</option>
+<option>cse</option>
+<option>it</option>
+<option>ece</option>
+<option>mech</option>
+<option>eee</option>
+<option>civil</option>
+</select>
+</h3>
+<h3>Hobbies:<textarea id="h"></textarea></h3>
+<h3><input type="submit" onclick="fun()"/></h3>
+</form>
+</div>
+</body>
+</html>
